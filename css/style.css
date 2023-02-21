@@ -1,0 +1,14 @@
+body {
+    background-color: blue;
+}
+
+#info {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: capitalize;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    color: white;
+}
