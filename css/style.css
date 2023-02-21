@@ -2,13 +2,37 @@ body {
     background-color: blue;
 }
 
-#info {
+.container {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+
+}
+
+#info {
     text-transform: capitalize;
     font-family: 'Courier New', Courier, monospace;
     font-size: 50px;
     color: white;
+}
+
+@keyframes orario {
+
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+        scale(1.8)
+    }
+}
+
+h1:hover {
+    cursor: pointer;
+    animation-name: orario;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
